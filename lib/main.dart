@@ -1,4 +1,4 @@
-// Card | Circle process
+// Card | Circle and Linear progress
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +10,7 @@ class myApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Card and circle progress',
+      title: 'Card view and Circle,Linear progress',
       home: HomeActivity(),
     );
   }
@@ -22,12 +22,15 @@ class HomeActivity extends StatelessWidget{
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.cyanAccent,
-        title: Text('Card view and circle progress'),
+        title: Text('Card view and circle Linear progress'),
       ),
 
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Center(
+            child: Text('This part is Card part'),
+          ),
           Center(
             //..............card part start ..........
 
@@ -52,7 +55,11 @@ class HomeActivity extends StatelessWidget{
           ),
 
           // .....circle progress start ..........
-          const Center(
+          Center(
+            child: Text('This part is circular progress part'),
+          ),
+
+           const Center(
             child: Padding(
               padding: EdgeInsets.all(30.0),
               child: CircularProgressIndicator(
@@ -66,6 +73,11 @@ class HomeActivity extends StatelessWidget{
           // .....circle progress end ..........
 
           //..........Linear progress start.........
+
+          Center(
+            child: Text('This part is Linear progress part'),
+          ),
+
           const Center(
             child: Padding(
               padding: EdgeInsets.all(30.0),
