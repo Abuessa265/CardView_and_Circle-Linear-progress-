@@ -51,10 +51,10 @@ class HomeActivity extends StatelessWidget{
 
           ),
 
-          // .....circle process start ..........
+          // .....circle progress start ..........
           const Center(
             child: Padding(
-              padding: EdgeInsets.all(50.0),
+              padding: EdgeInsets.all(30.0),
               child: CircularProgressIndicator(
                 color: Colors.blue,
                 strokeAlign: 1,
@@ -62,7 +62,21 @@ class HomeActivity extends StatelessWidget{
               ),
             ),
           ),
-          // .....circle process end ..........
+
+          // .....circle progress end ..........
+
+          //..........Linear progress start.........
+          const Center(
+            child: Padding(
+              padding: EdgeInsets.all(30.0),
+              child: LinearProgressIndicator(
+                color: Colors.blue,
+                minHeight: 20,
+                backgroundColor: Colors.deepOrange,
+              ),
+            ),
+          ),
+          //..........Linear progress end.........
         ],
 
       ),
